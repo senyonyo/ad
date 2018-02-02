@@ -36,10 +36,10 @@ function start(){
      // document.getElementById(j).innerHTML += "<img src=\""+ word + rand[j-1] + "/" + word + rand[j-1] + "-00" + k +".jpg\">";
       if(data[j][rand[j-1]].indexOf(k)+1){ 
         //ボタンが有るところのリンク処理
-        document.getElementById(j).innerHTML += "<a href=\"right.html\"><img src=\""+ word + rand[j-1] + "/" + word + rand[j-1] + "-00" + k +".jpg\"></a>";
+        document.getElementById(j).innerHTML += "<a href=\"https://re75.info/senyo/ad/count.php?word=[word]&ok=[1]&position=[data[j-1][rand-1]]"><img src=\""+ word + rand[j-1] + "/" + word + rand[j-1] + "-00" + k +".jpg\"></a>";
       }else{ 
         //ボタンが無いところのリンク処理
-        document.getElementById(j).innerHTML += "<a href=\"fake.html\"><img src=\""+ word + rand[j-1] + "/" + word + rand[j-1] + "-00" + k +".jpg\"></a>";
+        document.getElementById(j).innerHTML += "<a href=\"https://re75.info/senyo/ad/count.php?word=[word]&ok=[0]&position=[data[j-1][rand-1]]"\"><img src=\""+ word + rand[j-1] + "/" + word + rand[j-1] + "-00" + k +".jpg\"></a>";
       }
       if(k == 3 || k == 6){
         document.getElementById(j).innerHTML += "<br>";
